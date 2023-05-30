@@ -2,4 +2,14 @@
 
 {% block content%}
 <h1>Add Record</h1>
+
+<form method="POST" action="{% url 'add_record' %}">
+    
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <br>
+    <button class="btn btn-primary">Add Record</button>
+</form>
+
 {% endblock %}

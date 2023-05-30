@@ -28,7 +28,8 @@
 <br>
 <br>
 <a href="{% url 'home' %}" class="btn btn-primary">Back</a>
-<a href="{% url 'delete_record' customer_record.id %}" class="btn btn-danger">D elete</a>
+<a href="{% url 'delete_record' customer_record.id %}" class="btn btn-danger">Delete</a>
+<a href="{% url 'update_record' customer_record.id %}" class="btn btn-primary">update record</a>
 
 
 {% endblock %}
